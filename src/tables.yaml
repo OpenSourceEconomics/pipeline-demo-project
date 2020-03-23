@@ -1,0 +1,6 @@
+regression-table:
+  template: stargazer.r
+  depends_on:
+    - regression-random-data-ols
+    - regression-random-data-logit
+  produces: {{ build_directory }}/regression-table.html

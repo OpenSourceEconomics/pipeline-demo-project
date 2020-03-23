@@ -1,0 +1,14 @@
+name: pipeline-demo-project
+channels:
+  - conda-forge
+  - opensourceeconomics
+  - r
+dependencies:
+  - python=3.7
+  - pip
+  - pipeline
+  - rpy2
+  - pip:
+    - stargazer
+  - r-stargazer
+  - r-tidyverse

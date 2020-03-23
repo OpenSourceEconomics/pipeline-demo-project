@@ -1,0 +1,2 @@
+create-random-data:
+  template: create_random_data.py
