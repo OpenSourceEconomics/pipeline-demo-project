@@ -1,6 +1,14 @@
-regression-table:
+regression-table-py:
+  template: stargazer.py
+  depends_on:
+    - regression-random-data-ols-py
+    # - regression-random-data-logit-py  # Does not work.
+  produces: {{ build_directory }}/regression-table-py.html
+
+
+regression-table-r:
   template: stargazer.r
   depends_on:
-    - regression-random-data-ols
-    - regression-random-data-logit
-  produces: {{ build_directory }}/regression-table.html
+    - regression-random-data-ols-r
+    - regression-random-data-logit-r
+  produces: {{ build_directory }}/regression-table-r.html

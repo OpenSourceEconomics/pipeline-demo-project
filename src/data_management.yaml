@@ -1,2 +1,9 @@
 create-random-data:
   template: create_random_data.py
+  produces: {{ build_directory }}/data/random_data.csv
+
+
+{% for i in range(10) %}
+create-random-data-{{ i }}:
+  template: create_random_data.py
+{% endfor %}

@@ -1,6 +1,22 @@
 {% for method in ["ols", "logit"] %}
-regression-random-data-{{ method }}:
+regression-random-data-{{ method }}-py:
+  template: {{ method }}.py
+  formula: y ~ x
+  depends_on: create-random-data
+{% endfor %}
+
+
+{% for method in ["ols", "logit"] %}
+regression-random-data-{{ method }}-r:
   template: {{ method }}.r
   formula: y ~ x
   depends_on: create-random-data
+{% endfor %}
+
+
+{% for i in range(10) %}
+regression-random-data-ols-py-{{ i }}:
+  template: ols.py
+  formula: y ~ x
+  depends_on: create-random-data-{{ i }}
 {% endfor %}
