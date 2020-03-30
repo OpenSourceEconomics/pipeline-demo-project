@@ -12,6 +12,6 @@ plot-beta-distribution-part-2:
   template: plot_beta_distribution.py
   produces: {{ build_directory }}/beta_distribution_2.png
   depends_on:
-  {% for i in range(5, 11) %}
+  {% for i in range(5, 10) %}
     - regression-random-data-ols-py-{{ i }}
   {% endfor %}
