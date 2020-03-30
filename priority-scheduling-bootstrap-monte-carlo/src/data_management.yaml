@@ -1,0 +1,5 @@
+{% for i in range(10) %}
+create-random-data-{{ i }}:
+  template: create_random_data.py
+  seed: {{ i }}
+{% endfor %}

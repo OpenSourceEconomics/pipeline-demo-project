@@ -1,0 +1,6 @@
+{% for i in range(10) %}
+regression-random-data-ols-py-{{ i }}:
+  template: ols.py
+  formula: y ~ x
+  depends_on: create-random-data-{{ i }}
+{% endfor %}
