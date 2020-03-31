@@ -1,7 +1,5 @@
 create-random-data:
   template: create_random_data.py
-  produces: {{ build_directory }}/data/random_data.csv
 
 create-random-data-ordered-y:
   template: create_random_data_ordered_y.r
-  produces: ologit-data.rds

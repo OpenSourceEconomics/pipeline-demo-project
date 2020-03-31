@@ -1,4 +1,4 @@
-{% for method in ["ols", "logit"] %}
+{% for method in ["ols", "logit", "probit"] %}
 regression-random-data-{{ method }}-py:
   template: {{ method }}.py
   formula: y ~ x
@@ -6,7 +6,7 @@ regression-random-data-{{ method }}-py:
 {% endfor %}
 
 
-{% for method in ["ols", "logit"] %}
+{% for method in ["ols", "logit", "probit"] %}
 regression-random-data-{{ method }}-r:
   template: {{ method }}.r
   formula: y ~ x
@@ -16,5 +16,11 @@ regression-random-data-{{ method }}-r:
 
 ologit-regression:
   template: ologit.r
+  formula: y ~ x1 + x2
+  depends_on: create-random-data-ordered-y
+
+
+oprobit-regression:
+  template: oprobit.r
   formula: y ~ x1 + x2
   depends_on: create-random-data-ordered-y
