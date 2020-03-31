@@ -13,5 +13,9 @@ dependencies:
   - seaborn
   - pip:
     - stargazer
+  - r-feather
+  - r-functional
+  - r-mass
   - r-stargazer
   - r-tidyverse
+  - r-xtable

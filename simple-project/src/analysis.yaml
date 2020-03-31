@@ -12,3 +12,9 @@ regression-random-data-{{ method }}-r:
   formula: y ~ x
   depends_on: create-random-data
 {% endfor %}
+
+
+ologit-regression:
+  template: ologit.r
+  formula: y ~ x1 + x2
+  depends_on: create-random-data-ordered-y

@@ -12,3 +12,9 @@ regression-table-r:
     - regression-random-data-ols-r
     - regression-random-data-logit-r
   produces: {{ build_directory }}/regression-table-r.html
+
+
+table-ologit:
+  template: stargazer.r
+  depends_on: ologit-regression
+  produces: {{ build_directory }}/table-ologit.html
