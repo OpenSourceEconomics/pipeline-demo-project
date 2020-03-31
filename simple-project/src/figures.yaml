@@ -1,0 +1,14 @@
+distplot:
+  template: distplot.py
+  depends_on: create-random-data
+  produces: {{ build_directory }}/figures/distplot.png
+  # Variable to plot.
+  a: x
+
+regplot:
+  template: regplot.py
+  depends_on: create-random-data
+  produces: {{ build_directory }}/figures/regplot.png
+  # Variables to plot.
+  x: x
+  y: y

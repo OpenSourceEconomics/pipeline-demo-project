@@ -4,7 +4,7 @@ regression-table-py:
     - regression-random-data-ols-py
     # - regression-random-data-logit-py  # Does not work.
     # - regression-random-data-probit-py  # Does not work.
-  produces: {{ build_directory }}/regression-table-py.html
+  produces: {{ build_directory }}/tables/regression-table-py.html
 
 
 regression-table-r:
@@ -13,7 +13,7 @@ regression-table-r:
     - regression-random-data-ols-r
     - regression-random-data-logit-r
     - regression-random-data-probit-r
-  produces: {{ build_directory }}/regression-table-r.html
+  produces: {{ build_directory }}/tables/regression-table-r.html
 
 
 table-ologit:
@@ -21,4 +21,4 @@ table-ologit:
   depends_on:
     - ologit-regression
     - oprobit-regression
-  produces: {{ build_directory }}/table-ordered-models.html
+  produces: {{ build_directory }}/tables/table-ordered-models.html
