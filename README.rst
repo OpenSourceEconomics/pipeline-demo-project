@@ -13,6 +13,5 @@ List of workflows
   fitting a model and presenting the results in a regression table. This workflow is
   standard for every empirical science project.
 
-- `priority-scheduling-bootstrap-monte-carlo
-  <priority-scheduling-bootstrap-monte-carlo>`_ shows how to assign priorities to tasks
+- `priority-scheduling <priority-scheduling>`_ shows how to assign priorities to tasks
   and how it influences the execution of a workflow.

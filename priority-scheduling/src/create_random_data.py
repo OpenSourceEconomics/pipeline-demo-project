@@ -5,7 +5,7 @@ import pandas as pd
 
 def create_random_data():
     """Create a random data set."""
-    np.random.seed({{ seed }})
+    np.random.seed({{seed}})
 
     n_samples = 100
 

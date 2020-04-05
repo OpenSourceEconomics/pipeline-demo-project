@@ -1,5 +1,5 @@
-priority-scheduling-bootstrap-monte-carlo
-=========================================
+priority-scheduling
+===================
 
 This workflow does the following:
 
@@ -10,3 +10,7 @@ This workflow does the following:
 - The first plot which requires the first five data sets and regressions has a higher
   priority than the rest of the tasks. The priority of the first plotting task trickles
   down to all its predecessors and their execution is preferred.
+
+Task priorities are also displayed in the task graph.
+
+.. image:: dag.png
