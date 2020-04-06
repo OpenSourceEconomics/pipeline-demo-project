@@ -1,4 +1,4 @@
-{% for i in range(10) %}
+{% for i in range(globals['n_trials']) %}
 create-random-data-{{ i }}:
   template: create_random_data.py
   seed: {{ i }}

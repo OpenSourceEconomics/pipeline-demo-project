@@ -1,4 +1,4 @@
-{% for i in range(10) %}
+{% for i in range(globals['n_trials']) %}
 regression-random-data-ols-py-{{ i }}:
   template: ols.py
   formula: y ~ x
