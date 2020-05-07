@@ -1,5 +1,5 @@
 globals:
   n_trials: 10
 
-priority: true
+priority_scheduling: true
 priority_discount_factor: 0.6
